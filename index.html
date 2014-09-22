@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Contact Book</title>
+	<link type="text/css" rel="stylesheet" href="position.css"></link>
+	<link type="text/css" rel="stylesheet" href="theme.css"></link>
+	<script type="text/javascript" src="jquery-2.1.1.min.js"></script>
+	<script type="text/javascript" src="contactbook.js"></script>
+</head>
+<body>
+
+<div id="dialog" hidden="hidden">
+	<div></div>
+</div>
+
+<div id="recyclebin" ondragover="dragover(event)" ondrop="drop(event)">
+	<i class="icon trash"></i>
+</div>
+
+<div id="sort">
+	<label>sort by:
+		<select id="sortbox">
+			<option value="lastname">last name</option>
+			<option value="firstname">first name</option>
+			<option value="title">title</option>
+		</select>
+	</label>
+</div>
+
+<div id="config">
+	<select id="nameformat1">
+		<option value="1">First Middle</option>
+		<option value="2">First M.</option>
+		<option value="3">First</option>
+		<option value="0">Title Last</option>
+	</select>
+	<select id="nameformat2">
+		<option class="n2" value="0">Last</option>
+		<option class="n1" value="2" hidden="hidden">First Middle</option>
+		<option class="n1" value="3" hidden="hidden">First M.</option>
+		<option class="n1" value="4" hidden="hidden">First</option>
+		<option value="1"></option>
+	</select>
+</div>
+
+<div class="contactlist">
+	<div class="contactbar">
+		<img class="head" src="head.gif" />
+		<div class="contactbrief">
+	<span class="name title" contenteditable="true" spellcheck="false">Mr</span>
+	<span class="name first" contenteditable="true" spellcheck="false">Joakim</span>
+	<span class="name middle" contenteditable="true" spellcheck="false"></span>
+	<span class="name last" contenteditable="true" spellcheck="false">Hagen</span>
+			<button class="editc" type="button"><i class="icon edit"></i></button>
+		</div>
+	</div>
+</div>
+
+<div id="templates" hidden="hidden">
+	<div class="contactbar">
+		<img class="head" src="head.gif" />
+		<div class="contactbrief">
+			<span class="nameplate"></span>
+			<button class="editc" type="button"><i class="icon edit"></i></button>
+		</div>
+	</div>
+	<span class="name" contenteditable="true" spellcheck="false"></span>
+</div>
+
+</body>
+</html>

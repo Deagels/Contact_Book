@@ -1,0 +1,62 @@
+* {
+	border: 1px dashed #444444;
+}
+
+body {
+	margin: 0px;
+}
+
+#dialog {
+	position: fixed;
+	width: 100%;
+	height: 100%;
+}
+
+#recyclebin {
+	width: 100px;
+	height: 100px;
+}
+
+.contactlist {
+	max-width: 400px;
+}
+
+.edit {
+	float: right;
+}
+
+.nameplate {
+	font-weight: bold;
+}
+
+#config {
+	height: 40px;
+}
+
+select {
+	float: left;
+}
+
+.name {
+	font-weight: bold;
+	margin-right: 0.4em;
+	float: left;
+}
+
+.first, .last {
+	min-width: 0.6em;
+}
+
+.contactbar {
+	margin: 10px;
+	max-width: 400px;
+	height: 50px;
+}
+.head, h5 {
+	float: left;
+	margin: 2px;
+}
+.contactbrief {
+	height: 50px;
+	float: left;
+}
